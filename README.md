@@ -1,4 +1,4 @@
-# FlowbiteVue Playground
+# BootstrapVue Playground
 
 
 ## Project Setup
