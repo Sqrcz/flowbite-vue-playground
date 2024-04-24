@@ -12,6 +12,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "flowbite": "^2.2.0",
+    "flowbite-vue": "^0.1.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
@@ -25,10 +27,10 @@
     "@vue/test-utils": "^2.4.1",
     "@vue/tsconfig": "^0.4.0",
     "autoprefixer": "^10.4.16",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-vue-scoped-css": "^2.5.1",
-    "eslint-plugin-vue": "^9.17.0",
     "eslint": "^8.49.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "eslint-plugin-vue-scoped-css": "^2.5.1",
     "jsdom": "^22.1.0",
     "npm-run-all2": "^6.1.1",
     "postcss": "^8.4.31",
