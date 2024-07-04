@@ -1,5 +1,6 @@
 // import * as FlowBite from 'flowbite-vue'
 import * as FlowBite from '../../../flowbite-vue'
+// import * as FlowBite from '../../../sqrcz-flowbite-vue'
 
 const availableComponents = [
   'FwbAccordion',
@@ -50,7 +51,7 @@ const availableComponents = [
   'FwbTooltip',
 
   // untested components:
-  // 'FwbFileInput',
+  'FwbFileInput',
   // 'FwbFlowbiteThemable',
   // 'FwbFlowbiteThemableChild',
   // 'FwbFooter',
@@ -63,6 +64,7 @@ const availableComponents = [
   'FwbTextarea',
   // 'FwbToastProvider',   ???
   // 'FwbToggle',
+  'FwbDatepicker',
 ]
 
 const flowBiteComponents = []
