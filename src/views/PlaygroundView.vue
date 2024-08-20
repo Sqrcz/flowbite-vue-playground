@@ -2,17 +2,26 @@
   <div class="flex items-stretch w-full">
     <component-wrapper
       label="DatePicker (local)"
-      class="w-1/2"
+      class="w-1/3"
     >
       <div class="flex flex-col items-center justify-center gap-3 w-full">
         <pre>pickerDate: {{ pickerDate.toLocaleString() }}</pre>
         <local-datepicker v-model="pickerDate" />
       </div>
     </component-wrapper>
+    <component-wrapper
+      label="DatePicker (local)"
+      class="w-1/3"
+    >
+      <div class="flex flex-col items-center justify-center gap-3 w-full">
+        <pre>pickerDate: {{ pickerDate2.toLocaleString() }}</pre>
+        <local-datepicker v-model="pickerDate2" />
+      </div>
+    </component-wrapper>
 
     <component-wrapper
       label="V-Model test"
-      class="w-1/2"
+      class="w-1/3"
     >
       <div class="flex flex-col items-center justify-center gap-3 w-full">
         <pre>modelTest: {{ modelTestValue }}</pre>
@@ -20,23 +29,34 @@
       </div>
     </component-wrapper>
   </div>
-<!--
+
   <component-wrapper label="DatePicker">
-    <div class="flex justify-center gap-3 w-full">
-      <fwb-datepicker v-model="model" />
-      <fwb-datepicker
-        v-model="model"
-        format="DD dd MM yyyy"
-        clear-btn
-        today-btn
-        button-class="text-red-500"
-        :today-btn-mode="0"
-        title="Example datepicker"
-        :week-start="1"
-        label="Select date"
-      />
+    <div class="flex w-full justify-center text-center">
+      <div
+        class="w-1/2"
+      >
+        <pre>pickerDate: {{ pickerDate3.toLocaleString() }}</pre>
+        <fwb-datepicker v-model="pickerDate3" />
+      </div>
+      <div
+        class="w-1/2"
+      >
+        <pre>pickerDate: {{ pickerDate4.toLocaleString() }}</pre>
+        <fwb-datepicker
+          v-model="pickerDate4"
+          format="DD dd MM yyyy"
+          clear-btn
+          today-btn
+          button-class="text-red-500"
+          :today-btn-mode="0"
+          title="Example datepicker"
+          :week-start="1"
+          label="Select date"
+        />
+      </div>
     </div>
   </component-wrapper>
+  <!--
 
   <component-wrapper label="Tooltip">
     <div class="flex justify-center gap-3 w-full">
@@ -160,6 +180,9 @@ import ModelTest from '@/components/local/ModelTest.vue'
 
 const modelTestValue = ref('')
 const pickerDate = ref('')
+const pickerDate2 = ref('')
+const pickerDate3 = ref('')
+const pickerDate4 = ref('')
 
 // const pickerDate = defineModel<Date | string >('pickerDate', { default: new Date(), required: true })
 </script>

@@ -59,7 +59,9 @@ const availableComponents = [
   // 'FwbRadio',
   // 'FwbRange',
   // 'FwbSelect',
-  // 'FwbSidebar',
+  'FwbSidebar',
+  // 'FwbSidebarItem',
+  'FwbSidebarDropdownItem',
   // 'FwbSlotListener',
   'FwbTextarea',
   // 'FwbToastProvider',   ???
