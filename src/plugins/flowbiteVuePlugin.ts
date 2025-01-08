@@ -1,3 +1,4 @@
+import type { App, Component } from 'vue'
 // import * as FlowBite from 'flowbite-vue'
 import * as FlowBite from '../../../flowbite-vue'
 
@@ -65,12 +66,12 @@ const availableComponents = [
   // 'FwbToggle',
 ]
 
-const flowBiteComponents = []
+const flowBiteComponents: Component[] = []
 
-const flowbiteVuePlugin = (app) => {
+const flowbiteVuePlugin = (app: App) => {
   availableComponents.forEach(componentName => {
-    app.component(componentName, FlowBite[componentName])
-    flowBiteComponents.push(FlowBite[componentName])
+    app.component(componentName, (FlowBite as Record<string, Component>)[componentName] as Component)
+    flowBiteComponents.push((FlowBite as Record<string, Component>)[componentName] as Component)
   })
 }
 
